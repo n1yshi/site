@@ -521,40 +521,97 @@ body {
   white-space: nowrap;
 }
 
-.experience-list {
-  list-style: none;
-  flex-grow: 1;
-}
-
-.experience-item {
+.languages-images {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(48, 54, 61, 0.5);
-}
-
-.experience-item:last-child {
-  border-bottom: none;
-}
-
-.lang-info {
-  display: flex;
-  align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  justify-content: center;
 }
 
-.lang-logo {
-  width: 24px;
-  height: 24px;
+.languages-images img {
+  width: 32px;
+  height: 32px;
 }
 
-.card-footer {
-  font-size: 11px;
-  color: #8b949e;
-  margin-top: auto;
-  padding-top: 16px;
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-left: 0;
+}
+
+.links a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #58a6ff, #c9d1d9);
+  transition: width 0.3s ease;
+}
+
+.links a:hover {
+  color: #58a6ff;
+  transform: translateX(4px);
+}
+
+.links a:hover::before {
+  width: 100%;
+}
+
+.bio {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
   text-align: center;
+}
+
+.languages-images .lang-text {
+  background: rgba(48, 54, 61, 0.5);
+  color: #c9d1d9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  border: 1px solid rgba(48, 54, 61, 0.8);
+}
+
+.link-button {
+  display: block;
+  background: rgba(22, 27, 34, 0.6);
+  backdrop-filter: blur(10px);
+  color: #c9d1d9;
+  padding: 14px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(48, 54, 61, 0.5);
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.link-button:hover {
+  background: rgba(22, 27, 34, 0.9);
+  border-color: rgba(48, 54, 61, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  color: #c9d1d9;
+  text-decoration: none;
 }
 
 .loading-overlay {
