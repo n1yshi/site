@@ -390,7 +390,6 @@ footer {
     }
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -408,3 +407,4 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-secondary);
 }
+
